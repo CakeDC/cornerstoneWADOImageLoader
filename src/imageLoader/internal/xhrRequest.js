@@ -2,6 +2,7 @@ import external from '../../externalModules.js';
 import { getOptions } from './options.js';
 
 function downloadImage(url, options, imageId, headers, params, resolve, reject) {
+  const { cornerstone } = external;
   var xhr = new XMLHttpRequest();
   xhr.open('get', url, true);
   xhr.responseType = 'arraybuffer';

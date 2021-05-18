@@ -108,7 +108,7 @@ function xhrRequest (url, imageId, headers = {}, params = {}) {
 
   // @todo move these options to user based flags for localcache and preventRedirect for IE only
   var useLocalCache = false;
-  if (typeof window.AppConfig !== 'undefined' && typeof window.AppConfig.userEnableLocalCache !== 'undefined' && userEnableLocalCache) {
+  if (1 == userEnableLocalCache) {
     useLocalCache = true;
   }
   var preventRedirectCORS = false;

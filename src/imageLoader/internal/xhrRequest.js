@@ -136,7 +136,7 @@ function xhrRequest (url, imageId, headers = {}, params = {}) {
           return;
         }
         var xhrLocal = new XMLHttpRequest();
-        var localCacheUrl = 'https://cache.zulucare.com:8778/local-cache/' + localUrl;
+        var localCacheUrl = 'https://cache.zulucare.com:8777/local-cache/' + localUrl;
         xhrLocal.open('HEAD', localCacheUrl);
         xhrLocal.onerror = function (e) {
           window.console && console.log('localcache: server not found or image not cached yet: ' + localCacheUrl);
